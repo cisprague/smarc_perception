@@ -54,8 +54,13 @@ class sim_sss_detector:
         for marker in msg.markers:
             self.marked_positions['{}/{}'.format(marker.ns, marker.id)] = marker
         print(
+<<<<<<< HEAD
             'There are {} number of marked positions'.format(len(self.marked_positions)
         ))
+=======
+            'There are {} number of marked positions'.format(len(self.marked_positions))
+        )
+>>>>>>> 05338ea2e2b7ad70767bbc1e7b07ba6657c5b156
 
     def _update_pose(self, msg):
         """Update prev_pose and current_pose according to the odom msg received"""
